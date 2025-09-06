@@ -1,0 +1,154 @@
+5
+* * * *
+* * * *
+* * * *
+2 2 * *
+left
+
+2 2 2 *
+4 8 4 *
+16 32 8 4 
+* * * *
+right
+
+* * * *
+* * * *
+* * * *
+2 2 2 2
+left
+
+* * * *
+* * * *
+* * * *
+2 2 2 2
+up
+
+* 2 * 2
+* * * *
+* * * *
+2 2 2 2
+down
+
+2 2 4 8
+4 * 4 4
+512 512 512 512  
+32 512 512 32
+down
+
+Program Name: Swipe.java		Input File: swipe.dat
+
+
+Your friend just came up with a great idea for a game. 
+He explains the rules to you.
+•	You can only swipe left, right, up, and down
+•	The game is set on a 4x4 tile board
+•	Each tile will have one of the following values: 
+    *, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, and 4096
+•	When you swipe in a direction all the tiles will shift in that 
+    direction if the tile in front of it is of the same value or 
+	it is a space denoted by an *.
+•	If when you swipe the tiles are of the same value they will 
+    combine into one tile of the value of one of the tiles times 2.
+•	Each row and column is independent of each other 
+•	A tile can only be combined once in a turn. 
+    Ie. 2 2 2 2 yields * * 4 4 instead of * * * 8
+
+
+You are to make a program that prints out a board after a board 
+and a direction to shift is given to you.
+
+
+Input
+=====
+The first line will contain a single integer n that indicates 
+the number of data sets that follow.  
+
+Each data set will contain a 4x4 board followed by the direction 
+you are to shift the board. Each tile of the board is separated 
+by a space.  Each data set has a blank line after the direction.
+
+
+Output
+======
+Output each board after it has been shifted in the requested direction,
+followed by the direction, and finally followed by a blank line.
+
+ 
+Example Input File
+==================
+5
+* * * *
+* * * *
+* * * *
+2 2 * *
+left
+
+2 2 2 *
+4 8 4 *
+16 32 8 4 
+* * * *
+right
+
+* * * *
+* * * *
+* * * *
+2 2 2 2
+left
+
+* * * *
+* * * *
+* * * *
+2 2 2 2
+up
+
+* 2 * 2
+* * * *
+* * * *
+2 2 2 2
+down
+
+2 2 4 8
+4 * 4 4
+512 512 512 512  
+32 512 512 32
+down
+
+
+
+Example Output to Screen
+========================
+* * * *
+* * * *
+* * * *
+4 * * *
+left
+
+* * 2 4
+* 4 8 4
+16 32 8 4
+* * * *
+right
+
+* * * *
+* * * *
+* * * *
+4 4 * *
+left
+
+2 2 2 2
+* * * *
+* * * *
+* * * *
+up
+
+* * * *
+* * * *
+* * * *
+2 4 2 4
+down
+
+2 * * 8
+4 * * 4
+512 2 8 512
+32 1024 1024 32
+down

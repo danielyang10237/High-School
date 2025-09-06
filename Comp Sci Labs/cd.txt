@@ -1,0 +1,64 @@
+﻿
+
+Program Name: CD.java		Input File: cd.dat
+
+
+You’re working on putting together a CD full of some of 
+your favorite songs, however you like shorter songs the 
+best, and you do not like repeats.  Given a list of 
+acceptable songs to go onto the CD along with its size, 
+determine the closest to filling the CD you can get. 
+
+ 
+Input
+=====
+The first line will contain a single integer n that indicates 
+the number of data sets that follow.  Each data set will begin 
+with a time in the format “MM:SS”, that will not exceed 59:59, 
+representing the amount of song time the CD can hold.
+The second and final line of each test case will consist of 
+the times in the same format as above.  Note that there are one or
+more spaces between each time in the format “MM:SS”, so if you 
+are using the String's split method, your parameter MUST indicate
+that each item will be split by one or more spaces.  Also, please
+note that there is blank line between each dataset.
+
+
+Output
+======
+Output the total time of all songs added to the CD.
+Also output the number of songs as well as their 
+times in the format “MM:SS”, as shown by the example below.
+Your output must match exactly the style of the output as
+shown in the example below.  A blank line must separate each 
+dataset output.
+
+
+Example Input File
+==================
+3
+15:00
+01:00 06:00 05:00   02:00 03:00 04:00 05:00  03:00 02:00 01:00
+
+59:00
+15:00 27:00 15:00 15:00 16:00 20:30
+ 
+03:00
+02:00 01:01 
+
+
+
+Example Output to Screen
+========================
+Total song time on the CD - 15:00
+Total number of songs on the CD - 5.
+01:00 02:00 03:00 04:00 05:00
+
+Total song time on the CD - 51:30
+Total number of songs on the CD - 3.
+15:00 16:00 20:30 
+
+Total song time on the CD - 01:01
+Total number of songs on the CD - 1.
+01:01
+
