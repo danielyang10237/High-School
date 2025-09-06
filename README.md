@@ -99,7 +99,7 @@ A digital drawing application featuring:
 - Real-time mouse tracking
 - Clear canvas option
 
-### 📊 Utility Applications
+### Utility Applications
 
 #### Debate Practice Log
 A student management system for debate practice tracking:
